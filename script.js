@@ -163,3 +163,12 @@ console.log(firstName);
 //     default:
 //         console.log("Not a valid day!");
 // }
+const age = 17;
+
+console.log(`I'd like to drink ${age >= 18 ? "wine" : "water"}`);
+
+// there are expressions and then there are statements we cannot add satements with the console.log
+//we can use ternary operators inside the console.log because it is essentialy a expression and it generates
+//a value
+
+
