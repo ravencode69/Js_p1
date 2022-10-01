@@ -132,13 +132,34 @@ console.log(firstName);
 //always use strict equality
 
 //boolean operators
-//! && || 
-const hasDriversLicense = true;
-const hasGoodvision = false;
+//! && ||
+// const hasDriversLicense = true;
+// const hasGoodvision = false;
 
-console.log(hasDriversLicense && hasGoodvision);
-console.log(hasDriversLicense || hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodvision);
+// console.log(hasDriversLicense || hasDriversLicense);
 
-const shouldDrive = hasDriversLicense && hasGoodvision;
-if (shouldDrive) console.log("she can drive");
-else console.log("someone should drive");
+// const shouldDrive = hasDriversLicense && hasGoodvision;
+// if (shouldDrive) console.log("she can drive");
+// else console.log("someone should drive");
+
+
+//switch statements
+// const day = 'thursday';
+
+// switch (day) {
+//     case 'monday':
+//         console.log("run");
+//         console.log("go to coding meetup");
+//         break;
+//     case 'tuesday':
+//         console.log("prepare food");
+//         console.log("breathe");
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log("code practice");
+//         break;
+//     default:
+//         console.log("Not a valid day!");
+// }
