@@ -173,3 +173,6 @@ console.log(`I'd like to drink ${age >= 18 ? "wine" : "water"}`);
 
 
 //ES6 the biggest update to the language ever !
+//javascript is not forward compatible they are backward compatible
+//when we deploy the code we can transpile our code sothat they rum on the old browsers too
+//we use babel to transpile our code
