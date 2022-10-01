@@ -104,19 +104,28 @@ console.log(firstName);
 // console.log('20' / '10');//converts the string into number the divide operator (/)
 
 //5 falsy values : 0, '', undefined,null,Null
-//type coercion happens with boolean values 
-const money = 0;
+//type coercion happens with boolean values
+// const money = 0;
 
-if (money) {
-    console.log("Don't spend it all");
-}
-else {
-    console.log("Get a job bro");
-}
+// if (money) {
+//     console.log("Don't spend it all");
+// }
+// else {
+//     console.log("Get a job bro");
+// }
 
-let height = 0;
-if (height) {
-    console.log("Defined");
-}
-else
-    console.log("Undefined");
+// let height = 0;
+// if (height) {
+//     console.log("Defined");
+// }
+// else
+//     console.log("Undefined");
+
+const age = '18';
+if (age === 18) console.log("adult"); //strict eqaulity operator
+
+const fav = prompt("what is your favorite number");
+console.log(typeof fav);
+
+if (fav == 23)
+    console.log("cool");
