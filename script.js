@@ -121,11 +121,24 @@ console.log(firstName);
 // else
 //     console.log("Undefined");
 
-const age = '18';
-if (age === 18) console.log("adult"); //strict eqaulity operator
+// const age = '18';
+// if (age === 18) console.log("adult"); //strict eqaulity operator
 
-const fav = prompt("what is your favorite number");
-console.log(typeof fav);
+// const fav = Number(prompt("what is your favorite number"));
+// console.log(typeof fav);
 
-if (fav == 23)
-    console.log("cool");
+// if (fav === 23)
+//     console.log("cool");
+//always use strict equality
+
+//boolean operators
+//! && || 
+const hasDriversLicense = true;
+const hasGoodvision = false;
+
+console.log(hasDriversLicense && hasGoodvision);
+console.log(hasDriversLicense || hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodvision;
+if (shouldDrive) console.log("she can drive");
+else console.log("someone should drive");
