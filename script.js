@@ -172,3 +172,4 @@ console.log(`I'd like to drink ${age >= 18 ? "wine" : "water"}`);
 //a value
 
 
+//ES6 the biggest update to the language ever !
