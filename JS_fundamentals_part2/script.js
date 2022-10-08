@@ -145,8 +145,7 @@ console.log(jonas['first' + eveni]);
 const jonas2 = {
     firstName: 'nose',
     lastName: 'front',
-    borthYeahr: 2002,
-    age: 56,
+    birthYear: 2002,
     job: 'dancer',
     friends: ['dan', 'bannu', 'tannu'],
     hasLicence: true,
@@ -155,12 +154,13 @@ const jonas2 = {
     //     return 2037 - birthYear;
     // }
     calage: function () {
-        console.log(this);
-        return 2037 - (this.borthYeahr);
+        this.age = 2037 - (this.birthYear);
+        return this.age;
     }
 };
 
 console.log(jonas2.calage());
+console.log("jonas ka age is " + jonas2.age);
 //console.log(jonas2['calcage'](2001));
 
 
