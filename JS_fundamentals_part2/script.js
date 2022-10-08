@@ -137,12 +137,31 @@ console.log(jonas['firstName']); // computed member access
 const eveni = 'Name';
 console.log(jonas['first' + eveni]);
 
-const holder = prompt('what do you want to know about jonas');
-console.log(jonas[holder]);
+//const holder = prompt('what do you want to know about jonas');
+//console.log(jonas[holder]);
 
+//object methods
 
+const jonas2 = {
+    firstName: 'nose',
+    lastName: 'front',
+    borthYeahr: 2002,
+    age: 56,
+    job: 'dancer',
+    friends: ['dan', 'bannu', 'tannu'],
+    hasLicence: true,
 
+    // calcage: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+    calage: function () {
+        console.log(this);
+        return 2037 - (this.borthYeahr);
+    }
+};
 
+console.log(jonas2.calage());
+//console.log(jonas2['calcage'](2001));
 
 
 
