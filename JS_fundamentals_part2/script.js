@@ -178,11 +178,21 @@ const jonas3 = [
     true
 ]
 
+const types = [];
 
 for (let i = 0; i < 5; i++) {
     console.log(jonas3[i]);
+    //types[i] = typeof (jonas3[i]);
+    types.push(typeof (jonas3[i]));
 }
 
+console.log(types)
+
+let rep = 0;
+while (rep <= 9) {
+    console.log("sit on table " + rep);
+    rep++;
+}
 
 
 
