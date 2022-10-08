@@ -48,17 +48,77 @@
 //functions are just values
 
 // ARROW FUNCTIONS : shorter version of function expression
-const cal3 = birthyear => 2037 - birthyear;
-const aged = cal3(1995);
-console.log(aged);
+// const cal3 = birthyear => 2037 - birthyear;
+// const aged = cal3(1995);
+// console.log(aged);
 
-const yearsUntilRetire = (birthyear, firstName) => {
-    const age = 2037 - birthyear;
-    const yearsuntil = 65 - age;
-    return `${firstName} retires in ${yearsuntil}`;
+// const yearsUntilRetire = (birthyear, firstName) => {
+//     const age = 2037 - birthyear;
+//     const yearsuntil = 65 - age;
+//     return `${firstName} retires in ${yearsuntil}`;
+// }
+
+// console.log(yearsUntilRetire(1991, 'jonas'));
+
+// console.log(yearsUntilRetire(1995, 'bob'));
+//arrow function do not get this keyword
+
+//Conversion of the arrow function to normal function expression
+// const calcAge = function (birthYear) {
+//     return 2022 - birthYear;
+// }
+// const yearsUntilRetire2 = function (birthyear, firstName) {
+//     const age = calcAge(birthyear);
+//     const yearsuntil = 65 - age;
+//     if (yearsuntil > 0)
+//         return `${firstName} retires in ${yearsuntil}`;
+//     else
+//         return -1;
+// }
+
+// const result = yearsUntilRetire2(1956, 'Richa');
+// console.log(result);
+
+//coding challenge
+const calcAverage = (data1, data2, data3) => {
+
+    return (data1 + data2 + data3) / 3;
 }
 
-console.log(yearsUntilRetire(1991, 'jonas'));
+// const scoreD = calcAverage(44, 23, 71);
+// const scoreK = calcAverage(65, 54, 49);
 
-console.log(yearsUntilRetire(1995, 'bob'));
-//arrow function do not get this keyword
+// const winner = (scoreD > scoreK) ? 'Dolphins won' : 'Koalas won';
+// console.log(winner);
+
+//Array  and Objects
+
+// const friends = ['Rick', 'Roll', 'fin', 'Duggu'];
+// console.log(friends);
+
+// const years = new Array(1001, 1091, 1901);
+// console.log(years);
+
+// console.log(friends.length);
+//basic array methods
+const friends = ['Rick', 'Roll', 'fin', 'Duggu'];
+let newLen = friends.push('Phil');
+console.log(friends, newLen);
+
+//add to the first place of array 
+friends.unshift('Rani');
+console.log(friends, newLen);
+
+//last pop
+friends.pop();
+console.log(friends, newLen);
+
+//first pop
+friends.shift();
+console.log(friends, newLen);
+
+//index of 
+console.log(friends.indexOf('Roll'));
+//includes
+console.log(friends.includes('Rani'));
+
