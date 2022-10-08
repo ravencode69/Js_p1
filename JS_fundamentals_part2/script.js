@@ -102,7 +102,7 @@ const calcAverage = (data1, data2, data3) => {
 // console.log(friends.length);
 //basic array methods
 const friends = ['Rick', 'Roll', 'fin', 'Duggu'];
-let newLen = friends.push('Phil');
+let newLen = friends.push('Phil'); //member access
 console.log(friends, newLen);
 
 //add to the first place of array 
@@ -121,4 +121,31 @@ console.log(friends, newLen);
 console.log(friends.indexOf('Roll'));
 //includes
 console.log(friends.includes('Rani'));
+
+const jonas = {
+    firstName: 'nose',
+    lastName: 'front',
+    age: 56,
+    job: 'dancer',
+    friends: ['dan', 'bannu', 'tannu']
+};
+
+
+console.log(jonas.firstName);
+console.log(jonas['firstName']); // computed member access
+
+const eveni = 'Name';
+console.log(jonas['first' + eveni]);
+
+const holder = prompt('what do you want to know about jonas');
+console.log(jonas[holder]);
+
+
+
+
+
+
+
+
+
 
