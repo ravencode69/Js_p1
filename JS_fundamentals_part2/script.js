@@ -101,41 +101,41 @@ const calcAverage = (data1, data2, data3) => {
 
 // console.log(friends.length);
 //basic array methods
-const friends = ['Rick', 'Roll', 'fin', 'Duggu'];
-let newLen = friends.push('Phil'); //member access
-console.log(friends, newLen);
+// const friends = ['Rick', 'Roll', 'fin', 'Duggu'];
+// let newLen = friends.push('Phil'); //member access
+// console.log(friends, newLen);
 
-//add to the first place of array 
-friends.unshift('Rani');
-console.log(friends, newLen);
+// //add to the first place of array 
+// friends.unshift('Rani');
+// console.log(friends, newLen);
 
-//last pop
-friends.pop();
-console.log(friends, newLen);
+// //last pop
+// friends.pop();
+// console.log(friends, newLen);
 
-//first pop
-friends.shift();
-console.log(friends, newLen);
+// //first pop
+// friends.shift();
+// console.log(friends, newLen);
 
-//index of 
-console.log(friends.indexOf('Roll'));
-//includes
-console.log(friends.includes('Rani'));
+// //index of 
+// console.log(friends.indexOf('Roll'));
+// //includes
+// console.log(friends.includes('Rani'));
 
-const jonas = {
-    firstName: 'nose',
-    lastName: 'front',
-    age: 56,
-    job: 'dancer',
-    friends: ['dan', 'bannu', 'tannu']
-};
+// const jonas = {
+//     firstName: 'nose',
+//     lastName: 'front',
+//     age: 56,
+//     job: 'dancer',
+//     friends: ['dan', 'bannu', 'tannu']
+// };
 
 
-console.log(jonas.firstName);
-console.log(jonas['firstName']); // computed member access
+// console.log(jonas.firstName);
+// console.log(jonas['firstName']); // computed member access
 
-const eveni = 'Name';
-console.log(jonas['first' + eveni]);
+// const eveni = 'Name';
+// console.log(jonas['first' + eveni]);
 
 //const holder = prompt('what do you want to know about jonas');
 //console.log(jonas[holder]);
@@ -162,6 +162,38 @@ const jonas2 = {
 console.log(jonas2.calage());
 console.log("jonas ka age is " + jonas2.age);
 //console.log(jonas2['calcage'](2001));
+
+
+//iteration : the for loops 
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`DC is than marvel fr fr ${rep}`);
+// }
+
+const jonas3 = [
+    'jonas',
+    'smith',
+    1991,
+    ['rick', 'owen', 'dean'],
+    true
+]
+
+
+for (let i = 0; i < 5; i++) {
+    console.log(jonas3[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
