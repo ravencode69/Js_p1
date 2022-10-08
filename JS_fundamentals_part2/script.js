@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // let hasDriversLicense = false;
 // let passTest = true;
 
@@ -14,7 +14,7 @@
 //     console.log('my name is raven ');
 // }
 
-//calling /running / invoking the function 
+//calling /running / invoking the function
 // logger();
 // logger();
 
@@ -30,8 +30,8 @@
 
 //func declaration
 
-// const v = calcAge(1999); //we can call the function declaration in js before they are defined 
-//but the same can't be done for the FUNCTION EXPRESSION 
+// const v = calcAge(1999); //we can call the function declaration in js before they are defined
+//but the same can't be done for the FUNCTION EXPRESSION
 //happens due to hoisting
 // function calcAge(birthyear) {
 //     const age = 2037 - birthyear;
@@ -81,9 +81,8 @@
 
 //coding challenge
 const calcAverage = (data1, data2, data3) => {
-
-    return (data1 + data2 + data3) / 3;
-}
+  return (data1 + data2 + data3) / 3;
+};
 
 // const scoreD = calcAverage(44, 23, 71);
 // const scoreK = calcAverage(65, 54, 49);
@@ -105,7 +104,7 @@ const calcAverage = (data1, data2, data3) => {
 // let newLen = friends.push('Phil'); //member access
 // console.log(friends, newLen);
 
-// //add to the first place of array 
+// //add to the first place of array
 // friends.unshift('Rani');
 // console.log(friends, newLen);
 
@@ -117,7 +116,7 @@ const calcAverage = (data1, data2, data3) => {
 // friends.shift();
 // console.log(friends, newLen);
 
-// //index of 
+// //index of
 // console.log(friends.indexOf('Roll'));
 // //includes
 // console.log(friends.includes('Rani'));
@@ -129,7 +128,6 @@ const calcAverage = (data1, data2, data3) => {
 //     job: 'dancer',
 //     friends: ['dan', 'bannu', 'tannu']
 // };
-
 
 // console.log(jonas.firstName);
 // console.log(jonas['firstName']); // computed member access
@@ -143,70 +141,46 @@ const calcAverage = (data1, data2, data3) => {
 //object methods
 
 const jonas2 = {
-    firstName: 'nose',
-    lastName: 'front',
-    birthYear: 2002,
-    job: 'dancer',
-    friends: ['dan', 'bannu', 'tannu'],
-    hasLicence: true,
+  firstName: "nose",
+  lastName: "front",
+  birthYear: 2002,
+  job: "dancer",
+  friends: ["dan", "bannu", "tannu"],
+  hasLicence: true,
 
-    // calcage: function (birthYear) {
-    //     return 2037 - birthYear;
-    // }
-    calage: function () {
-        this.age = 2037 - (this.birthYear);
-        return this.age;
-    }
+  // calcage: function (birthYear) {
+  //     return 2037 - birthYear;
+  // }
+  calage: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
 };
 
 console.log(jonas2.calage());
 console.log("jonas ka age is " + jonas2.age);
 //console.log(jonas2['calcage'](2001));
 
-
-//iteration : the for loops 
+//iteration : the for loops
 
 // for (let rep = 1; rep <= 10; rep++) {
 //     console.log(`DC is than marvel fr fr ${rep}`);
 // }
 
-const jonas3 = [
-    'jonas',
-    'smith',
-    1991,
-    ['rick', 'owen', 'dean'],
-    true
-]
+const jonas3 = ["jonas", "smith", 1991, ["rick", "owen", "dean"], true];
 
 const types = [];
 
 for (let i = 0; i < 5; i++) {
-    console.log(jonas3[i]);
-    //types[i] = typeof (jonas3[i]);
-    types.push(typeof (jonas3[i]));
+  console.log(jonas3[i]);
+  //types[i] = typeof (jonas3[i]);
+  types.push(typeof jonas3[i]);
 }
 
-console.log(types)
+console.log(types);
 
 let rep = 0;
 while (rep <= 9) {
-    console.log("sit on table " + rep);
-    rep++;
+  console.log("sit on table " + rep);
+  rep++;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
