@@ -18,7 +18,7 @@ document.querySelector(".check").addEventListener("click", function () {
 
   if (!guess) {
     document.querySelector(".message").textContent = "N🚫 Number";
-    //no ip
+    //no input
   } else if (guess === secretNumber) {
     document.querySelector(".number").textContent = secretNumber;
 
