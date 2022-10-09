@@ -19,17 +19,23 @@ document.querySelector(".check").addEventListener("click", function () {
 
   if (!guess) {
     document.querySelector(".message").textContent = "N🚫 Number";
+    //no ip
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "Correct Number";
+
+    document.querySelector("body").style.backgroundColor = "#60b347";
+
+    document.querySelector(".number").style.width = "30rem";
+    //player wins
   } else if (guess > secretNumber) {
     document.querySelector(".message").textContent = "Too High !!";
     score--;
-
+    //too high
     document.querySelector(".score").textContent = score;
   } else {
     document.querySelector(".message").textContent = "Too low ";
     score--;
-
+    //too low
     document.querySelector(".score").textContent = score;
   }
 });
