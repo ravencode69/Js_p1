@@ -35,11 +35,16 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".highscore").textContent = highscore;
     }
   } else if (guess !== secretNumber) {
-    guess > secretNumber
-      ? (document.querySelector(".message").textContent = "Too High !!")
-      : (document.querySelector(".message").textContent = "Too low ");
-    score--;
-    document.querySelector(".score").textContent = score;
+    if (score > 1) {
+      guess > secretNumber
+        ? (document.querySelector(".message").textContent = "Too High !!")
+        : (document.querySelector(".message").textContent = "Too low ");
+      score--;
+      document.querySelector(".score").textContent = score;
+    } else {
+      document.querySelector(".message").textContent = "You lost the game :(";
+      document.querySelector(".score").textContent = 0;
+    }
   }
 });
 
