@@ -36,5 +36,6 @@ if (navigator.geolocation) {
     function () {
       alert("could'nt get your position");
     }
+    //error handling
   );
 }
